@@ -307,10 +307,12 @@ typedef NS_ENUM(NSInteger, CRBoxTextChangeType) {
         verStr = self.textCustomProcessblock(verStr);
     }
     
-    if (verStr.length >= _codeLength && _isAutoEndEdit) {
-        verStr = [verStr substringToIndex:_codeLength];
-        [self endEdit];
-    }
+    if (verStr.length >= _codeLength) {
+           verStr = [verStr substringToIndex:_codeLength];
+           if (_isAutoEndEdit) {
+               [self endEdit];
+           }
+       }
     textField.text = verStr;
     
     // 判断删除/增加
