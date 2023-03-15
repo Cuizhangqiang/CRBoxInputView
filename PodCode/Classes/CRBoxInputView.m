@@ -112,6 +112,7 @@ typedef NS_ENUM(NSInteger, CRBoxTextChangeType) {
     self.securityDelay = 0.3;
     self.codeLength = 4;
     self.ifNeedCursor = YES;
+    self.isAutoEndEdit = YES;
     self.keyBoardType = UIKeyboardTypeNumberPad;
     self.inputType = CRInputType_Number;
     self.customInputRegex = @"";
@@ -306,7 +307,7 @@ typedef NS_ENUM(NSInteger, CRBoxTextChangeType) {
         verStr = self.textCustomProcessblock(verStr);
     }
     
-    if (verStr.length >= _codeLength) {
+    if (verStr.length >= _codeLength && _isAutoEndEdit) {
         verStr = [verStr substringToIndex:_codeLength];
         [self endEdit];
     }

@@ -34,6 +34,14 @@ typedef NSString *(^TextCustomProcessblock)(NSString * _Nullable text);
 @interface CRBoxInputView : UIView
 
 /**
+ 是否自动结束编辑状态
+ 说明：在输入到最大个数时候是否自动收齐键盘。
+ 默认：YES
+ */
+@property (assign, nonatomic) BOOL isAutoEndEdit;
+
+
+/**
  是否需要光标
  ifNeedCursor
  default: YES
