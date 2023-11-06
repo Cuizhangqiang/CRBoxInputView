@@ -649,4 +649,9 @@ typedef NS_ENUM(NSInteger, CRBoxTextChangeType) {
     });
 }
 
+- (void)setAutocorrectionType:(UITextAutocorrectionType)autocorrectionType{
+    self.textView.autocorrectionType = autocorrectionType;
+}
+
+
 @end

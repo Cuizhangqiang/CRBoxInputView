@@ -42,6 +42,14 @@ typedef NSString *(^TextCustomProcessblock)(NSString * _Nullable text);
 
 
 /**
+ 输入校正
+ autocorrectionType
+ default is UITextAutocorrectionTypeDefault
+ */
+@property (assign, nonatomic) UITextAutocorrectionType autocorrectionType;
+
+
+/**
  是否需要光标
  ifNeedCursor
  default: YES

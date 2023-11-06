@@ -17,8 +17,4 @@
     return NO;
 }
 
-- (void)setAutocorrectionType:(UITextAutocorrectionType)autocorrectionType{
-    self.autocorrectionType = autocorrectionType;
-}
-
 @end
