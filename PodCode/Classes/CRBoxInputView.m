@@ -653,5 +653,8 @@ typedef NS_ENUM(NSInteger, CRBoxTextChangeType) {
     self.textView.autocorrectionType = autocorrectionType;
 }
 
+- (void)setAutocapitalizationType:(UITextAutocapitalizationType)autocapitalizationType{
+    self.textView.autocapitalizationType = autocapitalizationType;
+}
 
 @end

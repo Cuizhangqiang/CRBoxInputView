@@ -48,6 +48,12 @@ typedef NSString *(^TextCustomProcessblock)(NSString * _Nullable text);
  */
 @property (assign, nonatomic) UITextAutocorrectionType autocorrectionType;
 
+/**
+ 字母大写
+ autocapitalizationType
+ default is UITextAutocapitalizationTypeNone
+ */
+@property (assign, nonatomic) UITextAutocapitalizationType autocapitalizationType;
 
 /**
  是否需要光标
