@@ -18,7 +18,7 @@
 }
 
 - (void)setAutocorrectionType:(UITextAutocorrectionType)autocorrectionType{
-    self.textView.autocorrectionType = autocorrectionType;
+    self.autocorrectionType = autocorrectionType;
 }
 
 @end
